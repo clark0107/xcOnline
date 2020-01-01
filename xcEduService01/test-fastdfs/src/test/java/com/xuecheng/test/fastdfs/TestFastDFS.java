@@ -40,8 +40,8 @@ public class TestFastDFS {
             //创建一个storage储存客户端
             StorageClient1 storageClient1 = new StorageClient1(connection, storeStorage);
             //本地文件路径
-            String item = "F:\\C11E26C3DDC530DA9C13CFA2A9714DCF.jpg";
-            String fileid = storageClient1.upload_file1(item, "jpg", null);
+            String item = "D:\\tmp\\consul-test\\1234.txt";
+            String fileid = storageClient1.upload_file1(item, "txt", null);
 
             System.out.println("Upload local file " + item + " ok, fileid = " + fileid);
         } catch (IOException | MyException e) {

@@ -25,13 +25,13 @@ import java.util.Map;
 @Service
 public class FileSystemService {
 
-    @Value("${xuecheng.fastdfs.tracker_servers}")
+    @Value("${fastdfs.tracker_servers}")
     String tracker_servers;
-    @Value("${xuecheng.fastdfs.connect_timeout_in_seconds}")
+    @Value("${fastdfs.connect_timeout_in_seconds}")
     int connect_timeout_in_seconds;
-    @Value("${xuecheng.fastdfs.network_timeout_in_seconds}")
+    @Value("${fastdfs.network_timeout_in_seconds}")
     int network_timeout_in_seconds;
-    @Value("${xuecheng.fastdfs.charset}")
+    @Value("${fastdfs.charset}")
     String charset;
 
     @Autowired
