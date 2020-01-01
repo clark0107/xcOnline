@@ -53,8 +53,8 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   if(openAuthenticate){
 
-    console.log("111"+to)
-    console.log("222"+from)
+    // console.log(to)
+    // console.log(from)
     //***********身份校验***************
     let activeUser
     let uid
@@ -130,7 +130,7 @@ axios.interceptors.request.use(function (config) {
   return Promise.reject(error);
 });
 // 响应拦截
-axios.interceptors.response.use(data => {
+/*axios.interceptors.response.use(data => {
   console.log("data=")
   console.log(data)
   if(data && data.data){
@@ -148,7 +148,7 @@ axios.interceptors.response.use(data => {
     }
   }
   return data
-})
+})*/
 /*
  //axios请求超时设置
 axios.defaults.retry = 2;
